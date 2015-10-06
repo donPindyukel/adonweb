@@ -2,6 +2,13 @@
 
 .popup{
 	//outline: 1px solid red;
+	@media screen and (min-width: 321px) and (max-width: 768px) {
+         width: 768px;
+         height: 430px;
+         left:0;
+         padding:40px;
+         padding-top: 80px;
+            }
 	width: 340px;
 	height: 190px;
 	padding:15px;
@@ -14,15 +21,31 @@
 	.popup-title{
 		.zero();
 		.font-style(@font; @f-size: 14px; @f-height: 25px; @f-weight:bold; @f-color: black;);
+	  @media screen and (min-width: 321px) and (max-width: 768px) {
+         font-size: 32px;
+
 	}
+}
 	.popup-text{
        // padding: 15px;
         .font-style(@font; @f-size: 14px; @f-height: 20px; @f-weight:normal; @f-color: black;);
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+         font-size: 32px;
+         line-height: 35px;
+            }
 	}
 	.popup-close{
 		width: 22px;
 		height: 22px;
 		background: url('../img/close-popup.png') no-repeat;
+		@media screen and (min-width: 321px) and (max-width: 768px) {
+         background: url('../img/close-popup-tablet.png') no-repeat;
+         width: 50px;
+         height: 50px;
+         top:35px;
+		 left:700px;
+
+	}
 		position: absolute;
 		top:15px;
 		left:300px;
@@ -31,16 +54,26 @@
 }
 
 .popup-background{
-	background: black;
-	position: absolute;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-	z-index: 5;
-	opacity: 0.7;
+	//background: black;
+	width: 100%;
+	min-height:100%;
+	background-color: rgba(0,0,0,0.5);
+	overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 6;
+
 }
 
 .popup-wrap{
 	display: none;
+		/*@media screen and (min-width: 321px) and (max-width: 768px) {
+         height: 100%;
+            }*/
 }
+
+/*.pop{
+	background: black;
+	width: 100%;
+	min-height: 100%;
+}*/

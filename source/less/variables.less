@@ -63,3 +63,38 @@
         .stitches-btn-sprite(-5px, -245px, 38px, 38px);
     }
 }
+
+.stitches-btn-sprite-tablet(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.btn-sprite-tablet {
+    background-image: url(../img/tablet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.btn-sprite-tablet-fc-tablet {
+        .stitches-btn-sprite-tablet(-5px, -5px, 66px, 66px);
+    }
+
+    &.btn-sprite-tablet-g-tablet {
+        .stitches-btn-sprite-tablet(-5px, -81px, 66px, 66px);
+    }
+
+    &.btn-sprite-tablet-odn-tablet {
+        .stitches-btn-sprite-tablet(-5px, -157px, 66px, 66px);
+    }
+
+    &.btn-sprite-tablet-rss-tablet {
+        .stitches-btn-sprite-tablet(-5px, -233px, 66px, 66px);
+    }
+
+    &.btn-sprite-tablet-tw-tablet {
+        .stitches-btn-sprite-tablet(-5px, -309px, 66px, 66px);
+    }
+
+    &.btn-sprite-tablet-vk-tablet {
+        .stitches-btn-sprite-tablet(-5px, -385px, 66px, 66px);
+    }
+}

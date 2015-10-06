@@ -1,44 +1,90 @@
 @import (reference) "adonweb.less";
-@media screen and (min-width: 321px) and (max-width: 768px){}
-header{
-	background: url('../img/header-bg.png') center ;
-//	background-size: cover;
-	height: 115px;
-	min-width: 1000px;
-	.logo{
-		margin-left:10px;
-		display: inline-block;
-	}
+header {
+    background: url('../img/header-bg.png') center;
+    //	background-size: cover;
+    height: 115px;
+    min-width: 1000px;
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        min-width: 768px;
+        height: 372px;
+        background: url('../img/header-bg-tablet.png') center;
+        padding-top: 40px;
+        overflow: hidden;
+    }
+    .logo {
+        margin-left: 10px;
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+            margin: 0 auto;
+            width: 200px;
+            margin-bottom: 40px;
+
+        }
+    }
 }
 
-.header-menu{
-	display: inline-block;
+.logo {
 
+    a {
+        img {
+            @media screen and (min-width: 321px) and (max-width: 768px) {
+                width: 160px;
+                height: 62px;
+            }
+        }
+    }
 }
-.main-menu{
-	list-style: none;
-	//outline: 1px solid red;
-    margin-left: 185px;
-    
-	li{
-		
-		display: inline-block;
-		&:first-child{
-		margin-left: 0;
-		}
-		a{
-			text-decoration: none;
-			.font-style(@font; @f-size: 14px; @f-height: 35px; @f-weight; @f-color: white;);
-           // outline: 1px solid red;
-            display:block;
+
+.header-menu {
+    display: inline-block;
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        display: block;
+        //margin:0 auto;
+    }
+}
+
+.main-menu {
+    list-style: none;
+    //outline: 1px solid red;
+   // margin-left: 185px;
+   @media screen and (min-width: 321px) and (max-width: 768px) {
+        
+        margin-left: 90px;
+    }
+
+    li {
+        display: inline-block;
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+            display: block;
+            &:nth-child(5),
+            &:nth-child(6)
+            {
+            	display: none;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        a {
+            text-decoration: none;
+            .font-style(@font;
+            @f-size: 14px;
+            @f-height: 35px;
+            @f-weight;
+            @f-color: white;
+            );
+            // outline: 1px solid red;
+            display: block;
             width: 100px;
             text-align: center;
-            &:hover{
-            	color:#fa8a69;
-            	background: white;
-
+            @media screen and (min-width: 321px) and (max-width: 768px) {
+                font-size: 20px;
+                width: 470px;
+                //outline: 1px solid red;
             }
-		}
-	}
+            &:hover {
+                color: #fa8a69;
+                background: white;
+            }
+        }
+    }
 }
-

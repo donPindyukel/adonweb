@@ -4,6 +4,12 @@ footer{
 
 	background: #ff9915;
 	min-width: 1000px;
+	 @media screen and (min-width: 321px) and (max-width: 768px) {
+        
+        margin:0 auto;
+        min-width: 768px;
+       // outline: 1px solid red;
+    }
 	height: 50px;
 	text-align: center;
 	//.zero();
@@ -12,6 +18,9 @@ footer{
 	p{
 		.zero();
 		.font-style(@font; @f-size: 14px; @f-height: 45px; @f-weight; @f-color: white;);
+			 @media screen and (min-width: 321px) and (max-width: 768px) {
+                font-size: 26px;
+}
 		a{
 			color: white;
 			&:hover{

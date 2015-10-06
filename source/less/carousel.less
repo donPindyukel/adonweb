@@ -5,7 +5,13 @@
 	 @f-size: 26px; @f-height: 0px;
 	  @f-weight: bold; @f-color: #f86031;);
 	text-align: center;
-
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      // margin-top: 100px;
+       font-size: 42px;
+       //outline: 1px solid black;
+      
+       line-height: 40px;
+    }
 
 }
 
@@ -14,12 +20,24 @@
 	//height: 500px;
 	padding-bottom: 20px;
 	min-width: 1000px;
+	 @media screen and (min-width: 321px) and (max-width: 768px) {
+      background: url('../img/corousel-bg-tablet.png');
+      //outline: 1px solid black;
+      height: 470px;
+      min-width: 768px;
+      
+      padding-top: 20px;
+    }
 }
 
 .b-carousel  {
 	width: 1000px; /* ширина всего блока */
 	margin: 30px auto;
 	//outline: 1px solid green;
+	@media screen and (min-width: 321px) and (max-width: 768px) {
+     // outline: 1px solid green;
+      width: 680px;
+    }
 
 
 }
@@ -29,6 +47,10 @@
 		overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
 		margin: 0 auto; /* выравниваем по центру относительно родительского блока */
 	    //outline:1px solid red;
+	    @media screen and (min-width: 321px) and (max-width: 768px) {
+      //outline: 1px solid green;
+      width: 623px;
+    }
 	}
 		.h-carousel-items {
 			width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
@@ -43,6 +65,7 @@
 			    &:first-child{
 			    	margin-left: 0;
 			    }
+
 			}
 				.a-carousel-image-link { /* тут чисто оформление содержимого */
 					display: block;
