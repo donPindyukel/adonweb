@@ -1,0 +1,44 @@
+@import (reference) "adonweb.less";
+
+header{
+	background: url('../img/header-bg.png') center ;
+//	background-size: cover;
+	height: 115px;
+	min-width: 1000px;
+	.logo{
+		margin-left:10px;
+		display: inline-block;
+	}
+}
+
+.header-menu{
+	display: inline-block;
+
+}
+.main-menu{
+	list-style: none;
+	//outline: 1px solid red;
+    margin-left: 185px;
+    
+	li{
+		
+		display: inline-block;
+		&:first-child{
+		margin-left: 0;
+		}
+		a{
+			text-decoration: none;
+			.font-style(@font; @f-size: 14px; @f-height: 35px; @f-weight; @f-color: white;);
+           // outline: 1px solid red;
+            display:block;
+            width: 100px;
+            text-align: center;
+            &:hover{
+            	color:#fa8a69;
+            	background: white;
+
+            }
+		}
+	}
+}
+

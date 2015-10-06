@@ -1,0 +1,46 @@
+@import (reference) "adonweb.less";
+
+.popup{
+	//outline: 1px solid red;
+	width: 340px;
+	height: 190px;
+	padding:15px;
+	padding-top: 20px;
+	position: absolute;
+	top:25%;
+	left:36%;
+	background: white;
+	z-index: 6;
+	.popup-title{
+		.zero();
+		.font-style(@font; @f-size: 14px; @f-height: 25px; @f-weight:bold; @f-color: black;);
+	}
+	.popup-text{
+       // padding: 15px;
+        .font-style(@font; @f-size: 14px; @f-height: 20px; @f-weight:normal; @f-color: black;);
+	}
+	.popup-close{
+		width: 22px;
+		height: 22px;
+		background: url('../img/close-popup.png') no-repeat;
+		position: absolute;
+		top:15px;
+		left:300px;
+		cursor: pointer;
+	}
+}
+
+.popup-background{
+	background: black;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:-3%;
+	right:0;
+	z-index: 5;
+	opacity: 0.7;
+}
+
+.popup-wrap{
+	display: none;
+}

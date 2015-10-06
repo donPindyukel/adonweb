@@ -1,0 +1,65 @@
+@import (reference) "adonweb.less";
+/*текст в хеадере*/
+@font: 'Roboto light'; 
+@f-size: 26px; 
+@f-height: 36px; 
+@f-weight: normal; 
+@f-color: black;
+
+
+@name_ul: ul;
+
+//параметры кноаки
+@pad_top_btn: 5px;
+@radius_btn: 10px;//нижнее
+
+@up_clr_btn: #7e6bba;//верхнее значение градиента
+@dwn_clr_btn: #15054a;//нижнее
+@color_btn: #7e6bba;//статика
+@text_clr: #beb6d4;//цвет текста
+
+@width_btn: 250px;
+
+@mode: to bottom; // to bottom to top static
+
+//параметры сеток
+@content-width: 1200px;
+@max-column: 12;
+
+@column: 3;
+
+.stitches-btn-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.btn-sprite {
+    background-image: url(../img/spritesheet.png);   
+     background-repeat: no-repeat;
+    display: block;
+
+    &.btn-sprite-fcb {
+        .stitches-btn-sprite(-5px, -5px, 38px, 38px);
+    }
+
+    &.btn-sprite-g {
+        .stitches-btn-sprite(-5px, -53px, 38px, 38px);
+    }
+
+    &.btn-sprite-odn {
+        .stitches-btn-sprite(-5px, -101px, 38px, 38px);
+    }
+
+    &.btn-sprite-rss {
+        .stitches-btn-sprite(-5px, -149px, 38px, 38px);
+    }
+
+    &.btn-sprite-tw {
+        .stitches-btn-sprite(-5px, -197px, 38px, 38px);
+    }
+
+    &.btn-sprite-vk {
+        .stitches-btn-sprite(-5px, -245px, 38px, 38px);
+    }
+}

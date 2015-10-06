@@ -1,0 +1,116 @@
+@import (reference) "adonweb.less";
+
+.corousel-title{
+	.font-style(@font: 'Exo 2';
+	 @f-size: 26px; @f-height: 0px;
+	  @f-weight: bold; @f-color: #f86031;);
+	text-align: center;
+
+
+}
+
+.background-corousel{
+	background: #f1f1f1;
+	//height: 500px;
+	padding-bottom: 20px;
+	min-width: 1000px;
+}
+
+.b-carousel  {
+	width: 1000px; /* ширина всего блока */
+	margin: 30px auto;
+	//outline: 1px solid green;
+
+
+}
+	.h-carousel-wrapper {
+		width: 940px; /* ширина области карусели */
+		position: relative;
+		overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+		margin: 0 auto; /* выравниваем по центру относительно родительского блока */
+	    //outline:1px solid red;
+	}
+		.h-carousel-items {
+			width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
+			position: relative; /* позиционируем блок относительно основной области карусели */
+		}
+			.b-carousel-block {
+				float: left; /* выстраиваем все элементы карусели в ряд */
+				width: 300px; /* задаём ширину каждого элемента */
+				padding: 15px 0px; /* делаем оступы, чтобы элементы не сливались */
+			    margin-left: 20px;
+			    //outline: 1px solid black;
+			    &:first-child{
+			    	margin-left: 0;
+			    }
+			}
+				.a-carousel-image-link { /* тут чисто оформление содержимого */
+					display: block;
+					width: 300px;
+					height: 192px;
+					overflow: hidden;
+					border: 2px solid #fff;
+				//	outline: 1px solid red;
+					//text-align: center;
+					img{
+						position: absolute;
+						z-index: 1;
+						//outline: 1px solid green;
+					}
+				}
+	.b-carousel-button-left, .b-carousel-button-right {
+		width: 18px; /* задаем ширину кнопок */
+		height: 30px; /* задаем высоту кнопок */
+		position: relative;
+		top: 90px; /* позиционируем кнопки */
+		//left:100px;
+		.zero();
+		cursor: pointer; /* делаем кнопкам курсор в виде "пальца" */
+	}
+	.b-carousel-button-left {
+		float: left; /* выравниваем левую кнопку по левому краю */
+		background: url(../img/carousel-left.png) no-repeat; /* картинка с левой кнопкой */
+	}
+	.b-carousel-button-right {
+		float: right; /* выравниваем правую кнопку по правому краю */
+		background: url(../img/carousel-right.png) no-repeat; /* картинка с правой кнопкой */
+	}
+
+	.hover-block{
+		background: black;
+        margin-left:37px;
+        margin-top: 30px; 
+        position: absolute;
+        opacity: 0.7;
+        z-index: 2;
+        width: 230px;
+        height: 130px;
+        text-align: center;
+        padding:25px;
+        display: none;
+  
+        &:after{
+        	content: '';
+        	display: block;
+        	background: url('../img/carousel-hover-pict.png') no-repeat;
+        	width: 30px;
+        	height: 30px;
+        	position: absolute;
+        	top:10px;
+        	left:100px;
+        }
+
+        .font-style(@font; @f-size: 14px; @f-height: 19px; @f-weight: normal; @f-color: white;);
+	    .hover-block-btn{
+	    	background: black;
+	    	outline: none;
+	    	border: 1px solid white;
+	    	border-radius: 3px;
+	    	width: 150px;
+	    	&:hover{
+	    		background: white;
+	    		color:black;
+	    	}
+	    }
+	}
+

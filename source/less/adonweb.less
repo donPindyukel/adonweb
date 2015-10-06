@@ -1,0 +1,25 @@
+@import  "mixins.less";
+@import  "variables.less";
+@import  "fonts.less";
+@import  "mainsets.less";
+@import  "grid.less";
+
+html{
+	box-sizing: border-box;
+
+}
+
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+
+body {
+ .font-style(@font; @f-size; @f-height; @f-weight; @f-color;);
+  .zero();
+ }
+
+.content-wraper{
+	width: 960px;
+	//outline: 1px solid red;
+	margin: 0 auto;
+}
