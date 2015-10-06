@@ -6,6 +6,7 @@
 
 html{
 	box-sizing: border-box;
+	height: 100%;
 
 }
 
@@ -13,13 +14,27 @@ html{
 	box-sizing: inherit;
 }
 
-body {
+body,.page-wraper {
  .font-style(@font; @f-size; @f-height; @f-weight; @f-color;);
-  .zero();
+
+  height: 100%;
  }
 
 .content-wraper{
 	width: 960px;
-	//outline: 1px solid red;
+	
 	margin: 0 auto;
 }
+.page-wrapper {
+    min-height: 100%;
+   
+}
+
+.page-buffer{
+	outline: 2px solid red;
+	height: 70px;
+ 
+
+
+}
+

@@ -44,6 +44,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -52,19 +53,28 @@ html {
   box-sizing: inherit;
 }
 
-body {
+body,
+.page-wraper {
   font-family: 'Roboto light', sans-serif;
   font-size: 26px;
   line-height: 36px;
   font-weight: normal;
   color: black;
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
 .content-wraper {
   width: 960px;
   margin: 0 auto;
+}
+
+.page-wrapper {
+  min-height: 100%;
+}
+
+.page-buffer {
+  outline: 2px solid red;
+  height: 70px;
 }
 .corousel-title {
   font-family: 'Exo 2', sans-serif;
@@ -209,8 +219,7 @@ footer {
   min-width: 1000px;
   height: 50px;
   text-align: center;
-  background-image: -webkit-linear-gradient(bottom, #ff9b0d 0%, #ff923a 100%);
-  background-image: linear-gradient(bottom, #ff9b0d 0%, #ff923a 100%);
+  margin-top: -50px;
 }
 
 footer p {
