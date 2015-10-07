@@ -1,7 +1,7 @@
 @import (reference) "adonweb.less";
 header {
     background: url('../img/header-bg.png') center;
-    //	background-size: cover;
+    //  background-size: cover;
     height: 115px;
     min-width: 1000px;
     @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -10,25 +10,46 @@ header {
         background: url('../img/header-bg-tablet.png') center;
         padding-top: 40px;
         overflow: hidden;
+        text-align: center;
+    }
+    @media screen and (max-width: 320px) {
+        min-width: 320px;
+        height: 152px;
+        background: url('../img/header-bg-tablet-phone.png') center;
+        padding-top: 10px;
+        overflow: hidden;
+        text-align: center;
     }
     .logo {
         margin-left: 10px;
+        display: inline-block;
+        padding-top: 30px;
         @media screen and (min-width: 321px) and (max-width: 768px) {
+
             margin: 0 auto;
             width: 200px;
-            margin-bottom: 40px;
+            margin-bottom: 0px;
 
+        }
+        @media screen and (max-width: 320px) {
+            margin: 0 auto;
+            width: 65px;
+            padding:0;
+            // margin-bottom: 15px;
         }
     }
 }
 
 .logo {
-
     a {
         img {
             @media screen and (min-width: 321px) and (max-width: 768px) {
                 width: 160px;
                 height: 62px;
+            }
+            @media screen and (max-width: 320px) {
+                width: 65px;
+                height: 25px;
             }
         }
     }
@@ -36,29 +57,48 @@ header {
 
 .header-menu {
     display: inline-block;
+    //outline: 1px solid red;
+    margin-left: 140px;
+    
+  
+
     @media screen and (min-width: 321px) and (max-width: 768px) {
         display: block;
-        //margin:0 auto;
+        margin-left:110px;
+    }
+    @media screen and (max-width: 320px) {
+        display: block;
+        margin-left: 0px;
     }
 }
 
 .main-menu {
     list-style: none;
-    //outline: 1px solid red;
-   // margin-left: 185px;
-   @media screen and (min-width: 321px) and (max-width: 768px) {
-        
-        margin-left: 90px;
+  //  outline: 1px solid red;
+    // margin-left: 185px;
+    min-width: 675px;
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        margin-left: 0px;
+        //outline: 1px solid red;
     }
-
+    @media screen and (max-width: 320px) {
+        margin-left: 50px;
+        margin-top: 0;
+    }
     li {
         display: inline-block;
         @media screen and (min-width: 321px) and (max-width: 768px) {
             display: block;
             &:nth-child(5),
-            &:nth-child(6)
-            {
-            	display: none;
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            display: block;
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
             }
         }
         &:first-child {
@@ -79,6 +119,12 @@ header {
             @media screen and (min-width: 321px) and (max-width: 768px) {
                 font-size: 20px;
                 width: 470px;
+                //outline: 1px solid red;
+            }
+            @media screen and (max-width: 320px) {
+                font-size: 9px;
+                width: 140px;
+                height: 20px;
                 //outline: 1px solid red;
             }
             &:hover {

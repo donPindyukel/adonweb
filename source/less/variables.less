@@ -98,3 +98,39 @@
         .stitches-btn-sprite-tablet(-5px, -385px, 66px, 66px);
     }
 }
+
+
+.stitches-sprite-phone(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite-phone {
+    background-image: url(../img/phone.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-phone-fc-phone {
+        .stitches-sprite-phone(-5px, -5px, 28px, 28px);
+    }
+
+    &.sprite-phone-g-phone {
+        .stitches-sprite-phone(-5px, -43px, 28px, 28px);
+    }
+
+    &.sprite-phone-odn-phone {
+        .stitches-sprite-phone(-5px, -81px, 28px, 28px);
+    }
+
+    &.sprite-phone-rss-phone {
+        .stitches-sprite-phone(-5px, -119px, 28px, 28px);
+    }
+
+    &.sprite-phone-tw-phone {
+        .stitches-sprite-phone(-5px, -157px, 28px, 28px);
+    }
+
+    &.sprite-phone-vk-phone {
+        .stitches-sprite-phone(-5px, -195px, 28px, 28px);
+    }
+}

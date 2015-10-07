@@ -1,9 +1,8 @@
 $(document).ready(function(){
     
-    $('#list1').click(function(){
-    	showSelect($('.input-list1')[0]);
+   $('#list1').click(function(){
+      showSelect($('.input-list1')[0]);
     });
-   
     $('#list2').click(function(){
     	showSelect($('.input-list2')[0]);
     });
@@ -52,9 +51,12 @@ $('#popup-bgr').click(function(){
 
 function showSelect (element) {
 	var event;
+
     event = document.createEvent('MouseEvents');
-    event.initMouseEvent('mousedown', true, true, window);
+    event.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null);
     element.dispatchEvent(event);
+
+   
 }
 
 function eventHover (elem) {
